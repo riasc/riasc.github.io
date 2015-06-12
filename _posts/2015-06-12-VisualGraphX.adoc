@@ -1,2 +1,2 @@
-= VisualGraphX123
+= VisualGraphX
 VisualGraphX is coming soon.
