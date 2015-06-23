@@ -8,10 +8,7 @@ Examination of the owncloud.log located in the data directory of owncloud reveal
 
 {"reqId":"asd6a7sd8asd6a5a78sd98ad6a9a", "remoteAddr":"xxx.xxx.xxx.xxx", "app":"remote", "message":"An exception occurred while executing 'UPDATE `oc_preferences` SET `configvalue` = ? WHERE `userid` = ? AND `appid` = ? AND `configkey` = ? ' with params [1435094587, \"xxx\", \"login\", \"lastLogin\"]:\n\nSQLSTATE[HY000]: General error: 1665 Cannot execute statement: impossible to write to binary log since BINLOG_FORMAT = STATEMENT and at least one table uses a storage engine limited to row-based logging. InnoDB is limited to row-logging when transaction isolation level is READ COMMITTED or READ UNCOMMITTED.","level":4,"time":"2015-06-23T21:23:07+00:00"}
 
-Apparently this results from a mismatch of binary logging of SQL. In particular, 
-
-
-
-
+Apparently this results from a mismatch in the logging of the binary format from owncloud and the database. An explanation can also be found here:
+https://doc.owncloud.org/server/8.0/admin_manual/maintenance/upgrade.html#troubleshooting
 
 
