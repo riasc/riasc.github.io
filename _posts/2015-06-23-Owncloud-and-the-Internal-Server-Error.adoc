@@ -3,3 +3,15 @@
 Recently I installed owncloud (8.0.3) on a raspberry pi2 (wheezy) and it worked like a charm. However, after restarting the apache I received a Internal Server Error that prevented the login. 
 
 image::internalservererror.png[]
+
+Examination of the owncloud.log that is located in the data directory of owncloud revealed:
+
+{"reqId":"asd6a7sd8asd6a5a78sd98ad6a9a","remoteAddr":"xxx.xxx.xxx.xxx","app":"remote","message":"An exception occurred while executing 'UPDATE `oc_preferences` SET `configvalue` = ? WHERE `userid` = ? AND `appid` = ? AND `configkey` = ? ' with params [1435094587, \"xxx\", \"login\", \"lastLogin\"]:\n\nSQLSTATE[HY000]: General error: 1665 Cannot execute statement: impossible to write to binary log since BINLOG_FORMAT = STATEMENT and at least one table uses a storage engine limited to row-based logging. InnoDB is limited to row-logging when transaction isolation level is READ COMMITTED or READ UNCOMMITTED.","level":4,"time":"2015-06-23T21:23:07+00:00"}
+
+Apparently 
+
+
+
+
+
+
