@@ -1,6 +1,4 @@
-= [OwnCloud]Internal Server Error
+= Owncloud and the Internal Server Error 
 
-I did a fresh install of owncloud 8.0.3 that was working like a charm. However, after I restartet the apache (2.2.22)  
-
-
+Recently I installed owncloud (8.0.3) on a raspberry pi2 (wheezy) and it worked like a charm. However, after restarting the apache I received a Internal Server Error that prevented the login. 
 
