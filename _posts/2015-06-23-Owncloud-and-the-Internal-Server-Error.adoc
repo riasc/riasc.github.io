@@ -2,4 +2,4 @@
 
 Recently I installed owncloud (8.0.3) on a raspberry pi2 (wheezy) and it worked like a charm. However, after restarting the apache I received a Internal Server Error that prevented the login. 
 
-image::/owncloudinternalservererror/error.png
+image::internalservererror.png
