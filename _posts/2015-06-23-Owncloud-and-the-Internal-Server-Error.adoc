@@ -12,7 +12,7 @@ Apparently this results from a mismatch in the logging of the binary format from
 
 mysql -u username -p -h host databasename
 
-SET GLOBAL binlog_format=ROW;
+SET GLOBAL binlog_format=MIXED;
 
 
 
