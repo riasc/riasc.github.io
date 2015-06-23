@@ -11,6 +11,7 @@ Examination of the owncloud.log located in the data directory of owncloud reveal
 Apparently this results from a mismatch in the logging of the binary format from owncloud and the database. Changing of BINLOG_FORMAT=MIXED in the database does the trick:  
 
 mysql -u username -p -h host databasename
+
 SET GLOBAL binlog_format=ROW;
 
 
