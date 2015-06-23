@@ -35,7 +35,7 @@
     <meta property="og:description" content="Recently I installed owncloud (8.0.3) on a raspberry pi2 (wheezy) and it worked like a charm. However, after restarting the apache I received a Internal Server Error that prevented the login. Examination of the owncloud.log located in..." />
     <meta property="og:url" content="https://riasc.github.io/2015/06/23/Owncloud-and-the-Internal-Server-Error.html" />
     <meta property="article:published_time" content="2015-06-22T22:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-06-23T22:44:55.577Z" />
+    <meta property="article:modified_time" content="2015-06-23T22:45:17.602Z" />
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Owncloud and the Internal Server Error" />
@@ -57,7 +57,7 @@
     "headline": "Owncloud and the Internal Server Error",
     "url": "https://riasc.github.io/2015/06/23/Owncloud-and-the-Internal-Server-Error.html",
     "datePublished": "2015-06-22T22:00:00.000Z",
-    "dateModified": "2015-06-23T22:44:55.577Z",
+    "dateModified": "2015-06-23T22:45:17.602Z",
     "description": "Recently I installed owncloud (8.0.3) on a raspberry pi2 (wheezy) and it worked like a charm. However, after restarting the apache I received a Internal Server Error that prevented the login. Examination of the owncloud.log located in..."
 }
     </script>
@@ -176,8 +176,10 @@
 <p>Apparently this results from a mismatch in the logging of the binary format from owncloud and the database. Changing of BINLOG_FORMAT=MIXED in the database does the trick:</p>
 </div>
 <div class="paragraph">
-<p>mysql -u username -p -h host databasename
-SET GLOBAL binlog_format=ROW;</p>
+<p>mysql -u username -p -h host databasename</p>
+</div>
+<div class="paragraph">
+<p>SET GLOBAL binlog_format=ROW;</p>
 </div>
     </section>
 
