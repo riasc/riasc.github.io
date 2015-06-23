@@ -1,2 +1,4 @@
-= OwnCloud (8.0.3) Internal Server Error
+= Internal Server Error on owncloud 8.0.3 after server reboot
+
+
 
