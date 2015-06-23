@@ -35,7 +35,7 @@
     <meta property="og:description" content="Recently I installed owncloud (8.0.3) on a raspberry pi2 (wheezy) and it worked like a charm. However, after restarting the apache I received a Internal Server Error that prevented the login. Examination of the owncloud.log that is..." />
     <meta property="og:url" content="https://riasc.github.io/2015/06/23/Owncloud-and-the-Internal-Server-Error.html" />
     <meta property="article:published_time" content="2015-06-22T22:00:00.000Z" />
-    <meta property="article:modified_time" content="2015-06-23T22:34:55.468Z" />
+    <meta property="article:modified_time" content="2015-06-23T22:35:42.068Z" />
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Owncloud and the Internal Server Error" />
@@ -57,7 +57,7 @@
     "headline": "Owncloud and the Internal Server Error",
     "url": "https://riasc.github.io/2015/06/23/Owncloud-and-the-Internal-Server-Error.html",
     "datePublished": "2015-06-22T22:00:00.000Z",
-    "dateModified": "2015-06-23T22:34:55.468Z",
+    "dateModified": "2015-06-23T22:35:42.068Z",
     "description": "Recently I installed owncloud (8.0.3) on a raspberry pi2 (wheezy) and it worked like a charm. However, after restarting the apache I received a Internal Server Error that prevented the login. Examination of the owncloud.log that is..."
 }
     </script>
@@ -170,7 +170,7 @@
 <p>Examination of the owncloud.log that is located in the data directory of owncloud revealed:</p>
 </div>
 <div class="paragraph">
-<p>{"reqId":"asd6a7sd8asd6a5a78sd98ad6a9a","remoteAddr":"xxx.xxx.xxx.xxx","app":"remote","message":"An exception occurred while executing 'UPDATE <code>oc_preferences</code> SET <code>configvalue</code> = ? WHERE <code>userid</code> = ? AND <code>appid</code> = ? AND <code>configkey</code> = ? ' with params [1435094587, \"xxx\", \"login\", \"lastLogin\"]:\n\nSQLSTATE[HY000]: General error: 1665 Cannot execute statement: impossible to write to binary log since BINLOG_FORMAT = STATEMENT and at least one table uses a storage engine limited to row-based logging. InnoDB is limited to row-logging when transaction isolation level is READ COMMITTED or READ UNCOMMITTED.","level":4,"time":"2015-06-23T21:23:07+00:00"}</p>
+<p>{"reqId":"asd6a7sd8asd6a5a78sd98ad6a9a", "remoteAddr":"xxx.xxx.xxx.xxx", "app":"remote", "message":"An exception occurred while executing 'UPDATE <code>oc_preferences</code> SET <code>configvalue</code> = ? WHERE <code>userid</code> = ? AND <code>appid</code> = ? AND <code>configkey</code> = ? ' with params [1435094587, \"xxx\", \"login\", \"lastLogin\"]:\n\nSQLSTATE[HY000]: General error: 1665 Cannot execute statement: impossible to write to binary log since BINLOG_FORMAT = STATEMENT and at least one table uses a storage engine limited to row-based logging. InnoDB is limited to row-logging when transaction isolation level is READ COMMITTED or READ UNCOMMITTED.","level":4,"time":"2015-06-23T21:23:07+00:00"}</p>
 </div>
 <div class="paragraph">
 <p>Apparently</p>
